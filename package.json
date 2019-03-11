@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "next": "^8.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
