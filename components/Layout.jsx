@@ -1,12 +1,13 @@
 import Link from 'next/link';
-
-const Layout = ({ children }) => (
+import Head from './head';
+const Layout = ({ children, title }) => (
   <div>
+    <Head title={title} />
     <div className="container">
       <nav>
         <Link>
           <a>
-            <span className="title">Zacher News</span>
+            <span className="title">{title}</span>
           </a>
         </Link>
       </nav>

@@ -26,7 +26,7 @@ class Home extends React.Component {
       return <Error statusCode={503} />;
     } else {
       return (
-        <Layout>
+        <Layout title="Zacher News">
           <StoryList stories={stories} />
         </Layout>
       );
