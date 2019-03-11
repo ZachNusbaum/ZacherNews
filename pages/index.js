@@ -3,6 +3,13 @@ import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
 
-const Home = () => <h1>👋 Hello from Nextjs </h1>;
+const Home = () => (
+  <>
+    <h1>👋 Hello from Nextjs</h1>
+    <Link href="/second">
+      <a>Second Page</a>
+    </Link>
+  </>
+);
 
 export default Home;
