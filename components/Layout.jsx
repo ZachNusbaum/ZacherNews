@@ -5,7 +5,7 @@ const Layout = ({ children, title }) => (
     <Head title={title} />
     <div className="container">
       <nav>
-        <Link>
+        <Link href="/">
           <a>
             <span className="title">{title}</span>
           </a>
