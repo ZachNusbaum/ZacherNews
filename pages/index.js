@@ -2,6 +2,7 @@ import React from 'react';
 import fetch from 'isomorphic-fetch';
 import Error from 'next/error';
 
+import Layout from '../components/Layout';
 import StoryList from '../components/StoryList';
 
 class Home extends React.Component {
@@ -25,10 +26,9 @@ class Home extends React.Component {
       return <Error statusCode={503} />;
     } else {
       return (
-        <div>
-          <h1>Zacher News</h1>
+        <Layout>
           <StoryList stories={stories} />
-        </div>
+        </Layout>
       );
     }
   }
