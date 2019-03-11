@@ -2,6 +2,8 @@ import React from 'react';
 import fetch from 'isomorphic-fetch';
 import Error from 'next/error';
 
+import StoryList from '../components/StoryList';
+
 class Home extends React.Component {
   static async getInitialProps() {
     let stories;
@@ -25,11 +27,7 @@ class Home extends React.Component {
       return (
         <div>
           <h1>Zacher News</h1>
-          <div>
-            {stories.map(story => (
-              <h3 key={story.id}>{story.title}</h3>
-            ))}
-          </div>
+          <StoryList stories={stories} />
         </div>
       );
     }
